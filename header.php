@@ -13,7 +13,3 @@
                 <li><a href="add_booking.php">Add Booking</a></li>
                 <!-- Add more navigation links as needed -->
             </ul>
-        </nav>
-    </header>
-</body>
-</html>

@@ -1,0 +1,29 @@
+CREATE DATABASE wedding_hall_management;
+
+USE wedding_hall_management;
+
+CREATE TABLE bookings (
+    booking_id INT AUTO_INCREMENT PRIMARY KEY,
+    customer_name VARCHAR(100),
+    event_date DATE,
+    start_time TIME,
+    end_time TIME,
+    total_guests INT,
+    total_amount DECIMAL(10, 2)
+);
+
+CREATE TABLE income (
+    income_id INT AUTO_INCREMENT PRIMARY KEY,
+    booking_id INT,
+    FOREIGN KEY (booking_id) REFERENCES bookings(booking_id),
+    income_type VARCHAR(100),
+    amount DECIMAL(10, 2),
+    date DATE
+);
+
+CREATE TABLE expenses (
+    expense_id INT AUTO_INCREMENT PRIMARY KEY,
+    expense_type VARCHAR(100),
+    amount DECIMAL(10, 2),
+    date DATE
+);

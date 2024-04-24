@@ -41,4 +41,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </form>
 </div>
 
+<!-- Show bookings -->
+
+<?php
+
+// Fetch existing bookings
+$sql = "SELECT * FROM bookings";
+$result = $conn->query($sql);
+?>
+
+<div class="booking-list">
+    <h2>Existing Bookings</h2>
+    <?php
+    if ($result->num_rows > 0) {
+        echo "<table>";
+        echo "<tr><th>Customer Name</th><th>Event Date</th><th>Start Time</th><th>End Time</th><th>Total Guests</th><th>Total Amount</th></tr>";
+        while ($row = $result->fetch_assoc()) {
+            echo "<tr><td>" . $row["customer_name"] . "</td><td>" . $row["event_date"] . "</td><td>" . $row["start_time"] . "</td><td>" . $row["end_time"] . "</td><td>" . $row["total_guests"] . "</td><td>" . $row["total_amount"] . "</td></tr>";
+        }
+        echo "</table>";
+    } else {
+        echo "No bookings available.";
+    }
+    ?>
+</div>
+
+
 <?php include 'footer.php'; ?>

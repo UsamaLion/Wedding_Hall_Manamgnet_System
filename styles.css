@@ -62,3 +62,95 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+
+
+/* Styles for Add Booking Form */
+
+.form-container {
+    background-color: #ffffff00;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /*center the form*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    /*center the form*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    /*center the form*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container input[type="text"],
+.form-container input[type="date"],
+.form-container input[type="time"],
+.form-container input[type="number"] {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+.form-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+/* Styles for Existing Bookings */
+
+.booking-list {
+    margin-top: 20px;
+}
+
+.booking-list h2 {
+    margin-top: 0;
+}
+
+.booking-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.booking-list th, .booking-list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.booking-list th {
+    background-color: #ffffff00;
+}
+
+.booking-list tr:nth-child(even) {
+    background-color: #f2f2f200;
+}
+
+.booking-list tr:hover {
+    background-color: #dddddd49;
+}

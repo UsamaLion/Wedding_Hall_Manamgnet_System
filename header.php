@@ -13,4 +13,5 @@
                 <li><a href="add_booking.php">Add Booking</a></li>
                 <li><a href="income_expense.php">income_expense</a></li>
                 <li><a href="inventory_management.php">Inventory Management</a></li>
+                <li><a href="staff_management.php">staff_management</a></li>
             </ul>

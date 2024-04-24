@@ -154,3 +154,122 @@ nav ul li a:hover {
 .booking-list tr:hover {
     background-color: #dddddd49;
 }
+
+/* staff_management.php css code */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f900;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.add-staff-form,
+.attendance-form,
+.attendance-records {
+    margin-bottom: 20px;
+}
+
+.add-staff-form h3,
+.attendance-form h3,
+.attendance-records h3 {
+    margin-top: 0;
+}
+
+.add-staff-form label,
+.attendance-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.add-staff-form input[type="text"],
+.add-staff-form input[type="email"],
+.attendance-form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-staff-form button,
+.attendance-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-staff-form button:hover,
+.attendance-form button:hover {
+    background-color: #45a049;
+}
+
+.attendance-records table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.attendance-records th,
+.attendance-records td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.attendance-records th {
+    background-color: #f2f2f26c;
+}
+.staff-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.staff-list th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f2f2f293;
+    text-align: left;
+}
+.staff-list td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.staff-list tr:hover {
+    background-color: #00000079; /* Background color on hover */
+}
+
+
+/* Style for select element */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px; /* Adjust font size as needed */
+    color: #333; /* Text color */
+}
+
+/* Style for option elements */
+option {
+    background-color: #fff; /* Background color of options */
+    color: #333; /* Text color of options */
+}
+
+/* Style for option elements on hover */
+option:hover {
+    background-color: #f2f2f2; /* Background color of options on hover */
+    color: #333; /* Text color of options on hover */
+}

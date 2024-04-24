@@ -11,5 +11,5 @@
             <ul>
                 <li><a href="index.php">Home</a></li>
                 <li><a href="add_booking.php">Add Booking</a></li>
-                <!-- Add more navigation links as needed -->
+                <li><a href="income_expense.php">income_expense</a></li>
             </ul>

@@ -13,11 +13,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Insert data into bookings table
     $sql = "INSERT INTO bookings (customer_name, event_date, start_time, end_time, total_guests, total_amount)
             VALUES ('$customer_name', '$event_date', '$start_time', '$end_time', '$total_guests', '$total_amount')";
+     $sql_income = "INSERT INTO income (income_type, amount, date)
+     VALUES ('Booking - $customer_name', '$total_amount', '$event_date')";
 
-    if ($conn->query($sql) === TRUE) {
-        echo "<div class='success'>Booking added successfully!</div>";
-    } else {
-        echo "<div class='error'>Error: " . $sql . "<br>" . $conn->error . "</div>";
+        if ($conn->query($sql_income) === TRUE) {
+            echo "<div class='success'>Booking added successfully, and income entry added!</div>";
+        } else {
+            echo "<div class='error'>Error: " . $sql_income . "<br>" . $conn->error . "</div>";
+        }
+        if ($conn->query($sql) === TRUE) {
+            echo "<div class='success'>Booking added successfully!</div>";
+        } else {
+            echo "<div class='error'>Error: " . $sql . "<br>" . $conn->error . "</div>";
     }
 }
 ?>

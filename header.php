@@ -15,3 +15,5 @@
                 <li><a href="inventory_management.php">Inventory Management</a></li>
                 <li><a href="staff_management.php">staff_management</a></li>
             </ul>
+        </nav>
+    </header>

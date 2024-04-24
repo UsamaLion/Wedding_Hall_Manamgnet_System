@@ -67,7 +67,7 @@ nav ul li a:hover {
 /* Styles for Add Booking Form */
 
 .form-container {
-    background-color: #ffffff00;
+    background-color: #ffffff;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -109,7 +109,7 @@ nav ul li a:hover {
 }
 
 .form-container button {
-    background-color: #4CAF50;
+    background-color: #4CAF;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -119,7 +119,7 @@ nav ul li a:hover {
 }
 
 .form-container button:hover {
-    background-color: #45a049;
+    background-color: #45a0;
 }
 
 /* Styles for Existing Bookings */
@@ -144,11 +144,11 @@ nav ul li a:hover {
 }
 
 .booking-list th {
-    background-color: #ffffff00;
+    background-color: #ffffff;
 }
 
 .booking-list tr:nth-child(even) {
-    background-color: #f2f2f200;
+    background-color: #f2f2f2;
 }
 
 .booking-list tr:hover {
@@ -161,7 +161,7 @@ nav ul li a:hover {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f900;
+    background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
@@ -227,7 +227,7 @@ h2 {
 }
 
 .attendance-records th {
-    background-color: #f2f2f26c;
+    background-color: #f2f2f2;
 }
 .staff-list table {
     width: 100%;
@@ -238,7 +238,7 @@ h2 {
 .staff-list th {
     padding: 10px;
     border: 1px solid #ddd;
-    background-color: #f2f2f293;
+    background-color: #f2f2f2;
     text-align: left;
 }
 .staff-list td {

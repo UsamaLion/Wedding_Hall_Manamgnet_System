@@ -27,3 +27,27 @@ CREATE TABLE expenses (
     amount DECIMAL(10, 2),
     date DATE
 );
+-- Create the staff table
+CREATE TABLE IF NOT EXISTS staff (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    department VARCHAR(100) NOT NULL,
+    position VARCHAR(100) NOT NULL
+);
+
+-- Create the attendance table
+CREATE TABLE IF NOT EXISTS attendance (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    staff_id INT NOT NULL,
+    date DATE NOT NULL,
+    status ENUM('present', 'absent') NOT NULL,
+    FOREIGN KEY (staff_id) REFERENCES staff(id)
+);
+CREATE TABLE IF NOT EXISTS inventory (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    item_name VARCHAR(100) NOT NULL,
+    quantity INT NOT NULL,
+    price_per_item DECIMAL(10, 2) NOT NULL
+);  

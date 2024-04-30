@@ -41,6 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <label for="end-time">End Time:</label>
         <input type="time" id="end-time" name="end-time" required>
         <label for="total-guests">Total Guests:</label>
+        <input type="number" id="total-guests" name="total-guests" required>
         <label for="total-amount">Total Amount:</label>
         <input type="text" id="total-amount" name="total-amount" required>
         <button type="submit">Add Booking</button>
